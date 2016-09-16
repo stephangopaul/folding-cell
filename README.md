@@ -11,7 +11,7 @@
 
 
 ## About
-This project is maintained by Ramotion, an agency specialized in building dedicated engineering teams and developing custom software.<br><br> [Contact our team](https://business.ramotion.com?utm_source=gthb&utm_medium=special&utm_campaign=foolding-cell-contact-us) and we’ll help you work with the best engineers from Eastern Europe.
+Forked to add swift2.3 compatibility on the branch swift2.3.
 
 [![Animation](https://raw.githubusercontent.com/Ramotion/folding-cell/master/Screenshots/folding-cell.gif)](https://dribbble.com/shots/2121350-Delivery-Card)
 
@@ -20,7 +20,8 @@ The [iPhone mockup](https://store.ramotion.com/product/iphone-6-mockups?utm_sour
 ## Requirements
 
 - iOS 8.0+
-- Xcode 7.3
+- Xcode 8
+- Swift 2.3
 
 ## Installation
 
