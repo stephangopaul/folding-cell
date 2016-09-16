@@ -438,7 +438,7 @@ public class FoldingCell: UITableViewCell {
 
 // MARK: RotatedView
 
-public class RotatedView: UIView {
+public class RotatedView: UIView, CAAnimationDelegate {
   var hiddenAfterAnimation = false
   var backView: RotatedView?
   
@@ -501,12 +501,12 @@ extension RotatedView {
     self.layer.addAnimation(rotateAnimation, forKey: "rotation.x")
   }
   
-  override public func animationDidStart(anim: CAAnimation) {
+  public func animationDidStart(anim: CAAnimation) {
     self.layer.shouldRasterize = true
     self.alpha = 1
   }
   
-  override public func animationDidStop(anim: CAAnimation, finished flag: Bool) {
+  public func animationDidStop(anim: CAAnimation, finished flag: Bool) {
     if hiddenAfterAnimation {
       self.alpha = 0
     }
@@ -521,7 +521,7 @@ extension UIView {
     UIGraphicsBeginImageContextWithOptions(frame.size, false, 0.0)
     
     let context = UIGraphicsGetCurrentContext();
-    CGContextTranslateCTM(context, frame.origin.x * -1, frame.origin.y * -1)
+    CGContextTranslateCTM(context!, frame.origin.x * -1, frame.origin.y * -1)
     
     guard let currentContext = UIGraphicsGetCurrentContext() else {
       return nil
