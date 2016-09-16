@@ -11,7 +11,7 @@
 
 
 ## About
-Forked to add swift2.3 compatibility on the branch swift2.3.
+Forked to add swift3 compatibility on the branch swift3.
 
 [![Animation](https://raw.githubusercontent.com/Ramotion/folding-cell/master/Screenshots/folding-cell.gif)](https://dribbble.com/shots/2121350-Delivery-Card)
 
@@ -21,7 +21,7 @@ The [iPhone mockup](https://store.ramotion.com/product/iphone-6-mockups?utm_sour
 
 - iOS 8.0+
 - Xcode 8
-- Swift 2.3
+- Swift 3
 
 ## Installation
 
